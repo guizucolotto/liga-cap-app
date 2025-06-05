@@ -12,6 +12,7 @@ import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { years } from "@/constants/constants";
 
@@ -198,55 +199,67 @@ const PlayersPage = () => {
               <CardContent className="p-4">
                 <div className="space-y-2 mb-4">
                   <h2 className="text-sm font-semibold text-muted-foreground">Filtros</h2>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <Input
-                    placeholder="Buscar por nome..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full md:w-1/5"
-                  />
+                  <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+                    <div className="flex flex-col w-full md:w-1/5 gap-1">
+                      <Label htmlFor="player-search">Buscar</Label>
+                      <Input
+                        id="player-search"
+                        placeholder="Buscar por nome..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                      />
+                    </div>
 
-                  <Select value={positionFilter} onValueChange={value => setPositionFilter(value || "all")}>
-                    <SelectTrigger className="w-full md:w-[130px]">
-                      <SelectValue placeholder="Todas posições" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="all">Todas posições</SelectItem>
-                      {positionOptions.map((pos) => (
-                        <SelectItem key={String(pos)} value={String(pos)}>
-                          {pos}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                    <div className="flex flex-col w-full md:w-[130px] gap-1">
+                      <Label htmlFor="position-filter">Posição</Label>
+                      <Select value={positionFilter} onValueChange={value => setPositionFilter(value || "all")}>
+                        <SelectTrigger id="position-filter" className="w-full">
+                          <SelectValue placeholder="Todas posições" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">Todas posições</SelectItem>
+                          {positionOptions.map((pos) => (
+                            <SelectItem key={String(pos)} value={String(pos)}>
+                              {pos}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
 
-                  <Select value={nflTeamFilter} onValueChange={value => setNflTeamFilter(value || "all")}>
-                    <SelectTrigger className="w-full md:w-[130px]">
-                      <SelectValue placeholder="Todos os times NFL" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="all">Todos os times</SelectItem>
-                      {nflTeamOptions.map((team) => (
-                        <SelectItem key={String(team)} value={String(team)}>
-                          {team}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                    <div className="flex flex-col w-full md:w-[130px] gap-1">
+                      <Label htmlFor="nfl-team-filter">Time NFL</Label>
+                      <Select value={nflTeamFilter} onValueChange={value => setNflTeamFilter(value || "all")}>
+                        <SelectTrigger id="nfl-team-filter" className="w-full">
+                          <SelectValue placeholder="Todos os times NFL" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">Todos os times</SelectItem>
+                          {nflTeamOptions.map((team) => (
+                            <SelectItem key={String(team)} value={String(team)}>
+                              {team}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
 
-                  <Select value={fantasyTeamFilter} onValueChange={value => setFantasyTeamFilter(value || "all")}>
-                    <SelectTrigger className="w-full md:w-[160px]">
-                      <SelectValue placeholder="Todos os times Fantasy" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="all">Todos os times</SelectItem>
-                      {fantasyTeamOptions.map((team) => (
-                        <SelectItem key={String(team)} value={String(team)}>
-                          {team}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                    <div className="flex flex-col w-full md:w-[160px] gap-1">
+                      <Label htmlFor="fantasy-team-filter">Time Fantasy</Label>
+                      <Select value={fantasyTeamFilter} onValueChange={value => setFantasyTeamFilter(value || "all")}>
+                        <SelectTrigger id="fantasy-team-filter" className="w-full">
+                          <SelectValue placeholder="Todos os times Fantasy" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">Todos os times</SelectItem>
+                          {fantasyTeamOptions.map((team) => (
+                            <SelectItem key={String(team)} value={String(team)}>
+                              {team}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
                   </div>
                 </div>
 
