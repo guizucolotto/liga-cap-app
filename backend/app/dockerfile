@@ -1,0 +1,16 @@
+# backend/Dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Instala dependências primeiro (cache eficiente)
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copia o restante do código
+COPY . .
+
+EXPOSE 5000
+
+# Use Gunicorn para servir o app Flask em produção!
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]

@@ -1,0 +1,201 @@
+import React, { useEffect, useState } from "react";
+import {
+  Card, CardContent, CardHeader, CardTitle,
+} from "@/components/ui/card";
+import {
+  Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
+} from "@/components/ui/table";
+import {
+  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
+} from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
+import { years } from "@/constants/constants";
+
+type Player = {
+  id: string;
+  name: string;
+  position: string;
+  contractType: string;
+  salary: number;
+  fantasyTeam: string;
+  nflTeam: string;
+  deadCap: number[];
+};
+
+type RawPlayer = Omit<Player, 'deadCap'> & {
+  deadCap2026?: number;
+  deadCap2027?: number;
+  deadCap2028?: number;
+  deadCap2029?: number;
+};
+
+const formatMoney = (val: number) =>
+  isNaN(val) || val === 0 ? "-" : `$${(val / 1_000_000).toFixed(1)}M`;
+
+const PlayersPage = () => {
+  const [playersData, setPlayersData] = useState<Player[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [positionFilter, setPositionFilter] = useState("all");
+  const [nflTeamFilter, setNflTeamFilter] = useState("all");
+  const [fantasyTeamFilter, setFantasyTeamFilter] = useState("all");
+
+  useEffect(() => {
+    const fetchPlayers = async () => {
+      try {
+        const res = await fetch("http://localhost:5000/players");
+        const data = await res.json();
+        const normalized = (data as RawPlayer[]).map((p) => ({
+          ...p,
+          deadCap: [
+            Number(p.deadCap2026) || 0,
+            Number(p.deadCap2027) || 0,
+            Number(p.deadCap2028) || 0,
+            Number(p.deadCap2029) || 0,
+          ],
+          salary: Number(p.salary) || 0,
+        }));
+        setPlayersData(normalized);
+      } catch (err) {
+        console.error("Erro ao buscar jogadores:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchPlayers();
+  }, []);
+
+  // Helpers para opções únicas
+  const getUnique = (key: keyof Player) =>
+    Array.from(new Set(playersData.map((p) => p[key]).filter(Boolean))).sort();
+
+  const positionOptions = getUnique("position");
+  const nflTeamOptions = getUnique("nflTeam");
+  const fantasyTeamOptions = getUnique("fantasyTeam");
+
+  // Filtro encapsulado em renderTable
+  const renderTable = () => {
+    const filteredRows = playersData.filter((p) => {
+      const matchName = p.name?.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchPosition = positionFilter === "all" || p.position === positionFilter;
+      const matchNfl = nflTeamFilter === "all" || p.nflTeam === nflTeamFilter;
+      const matchFantasy = fantasyTeamFilter === "all" || p.fantasyTeam === fantasyTeamFilter;
+      return matchName && matchPosition && matchNfl && matchFantasy;
+    });
+
+    return (
+      <div className="overflow-x-auto w-full">
+        <div style={{ minWidth: "1000px", maxHeight: "500px", overflowY: "auto" }}>
+          {loading ? (
+            <p>Carregando...</p>
+          ) : filteredRows.length === 0 ? (
+            <p className="text-muted-foreground">Nenhum jogador encontrado com os filtros aplicados.</p>
+          ) : (
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Nome</TableHead>
+                  <TableHead>Posição</TableHead>
+                  <TableHead>Contrato</TableHead>
+                  <TableHead>Fantasy</TableHead>
+                  <TableHead>NFL</TableHead>
+                  <TableHead className="text-right">Salary</TableHead>
+                  {years.slice(1).map((year, i) => (
+                    <TableHead key={year} className="text-right">
+                      Dead Cap {year}
+                    </TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {filteredRows.map((player, idx) => (
+                  <TableRow key={player.id}>
+                    <TableCell className="font-medium">{player.name}</TableCell>
+                    <TableCell>{player.position}</TableCell>
+                    <TableCell>{player.contractType}</TableCell>
+                    <TableCell>{player.fantasyTeam}</TableCell>
+                    <TableCell>{player.nflTeam}</TableCell>
+                    <TableCell className="text-right">{formatMoney(player.salary)}</TableCell>
+                    {player.deadCap.map((cap, i) => (
+                      <TableCell key={i} className="text-right">
+                        {cap > 0 ? formatMoney(cap) : "-"}
+                      </TableCell>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <h1 className="text-3xl font-bold tracking-tight">Players</h1>
+        <div className="text-sm text-muted-foreground">Temporada 2025</div>
+      </div>
+
+      <Card className="w-full overflow-hidden">
+        <CardHeader>
+          <CardTitle>Jogadores</CardTitle>
+        </CardHeader>
+        <CardContent className="p-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+            <Input
+              placeholder="Buscar por nome..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full md:w-1/4"
+            />
+            <Select value={positionFilter} onValueChange={setPositionFilter}>
+              <SelectTrigger className="w-full md:w-[160px]">
+                <SelectValue placeholder="Todas posições" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Todas posições</SelectItem>
+                {positionOptions.map((pos) => (
+                  <SelectItem key={String(pos)} value={String(pos)}>
+                    {pos}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <Select value={nflTeamFilter} onValueChange={setNflTeamFilter}>
+              <SelectTrigger className="w-full md:w-[160px]">
+                <SelectValue placeholder="Todos os times NFL" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Todos os times</SelectItem>
+                {nflTeamOptions.map((team) => (
+                  <SelectItem key={String(team)} value={String(team)}>
+                    {team}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <Select value={fantasyTeamFilter} onValueChange={setFantasyTeamFilter}>
+              <SelectTrigger className="w-full md:w-[160px]">
+                <SelectValue placeholder="Todos os times Fantasy" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Todos os times</SelectItem>
+                {fantasyTeamOptions.map((team) => (
+                  <SelectItem key={String(team)} value={String(team)}>
+                    {team}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          {renderTable()}
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default PlayersPage;

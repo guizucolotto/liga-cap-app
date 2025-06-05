@@ -1,0 +1,1266 @@
+{
+  "AFC": [
+    {
+      "week": 1,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "MIAMI DOLPHINS"
+        },
+        {
+          "id": 3,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "NEW YORK JETS"
+        },
+        {
+          "id": 4,
+          "home": "BALTIMORE RAVENS",
+          "away": "CINCINATTI BENGALS"
+        },
+        {
+          "id": 5,
+          "home": "CLEVELAND BROWNS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "INDIANAPOLIS COLTS"
+        },
+        {
+          "id": 7,
+          "home": "JACKSONVILLE JAGUARS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 8,
+          "home": "DENVER BRONCOS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 9,
+          "home": "LAS VEGAS RAIDERS",
+          "away": "LOS ANGELES CHARGERS"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "NEW ENGLAND PATRIOTS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "NEW YORK JETS"
+        },
+        {
+          "id": 4,
+          "home": "BALTIMORE RAVENS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 5,
+          "home": "CINCINATTI BENGALS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 8,
+          "home": "DENVER BRONCOS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 9,
+          "home": "KANSAS CITY CHIEFS",
+          "away": "LOS ANGELES CHARGERS"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "NEW YORK JETS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "NEW ENGLAND PATRIOTS"
+        },
+        {
+          "id": 4,
+          "home": "BALTIMORE RAVENS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 5,
+          "home": "CINCINATTI BENGALS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 8,
+          "home": "DENVER BRONCOS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 9,
+          "home": "KANSAS CITY CHIEFS",
+          "away": "LAS VEGAS RAIDERS"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "BALTIMORE RAVENS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "CINCINATTI BENGALS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "DENVER BRONCOS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 8,
+          "home": "JACKSONVILLE JAGUARS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 9,
+          "home": "TENEESSE TITANS",
+          "away": "LOS ANGELES CHARGERS"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "CINCINATTI BENGALS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "BALTIMORE RAVENS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 8,
+          "home": "JACKSONVILLE JAGUARS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 9,
+          "home": "TENEESSE TITANS",
+          "away": "DENVER BRONCOS"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "BALTIMORE RAVENS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "CINCINATTI BENGALS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 8,
+          "home": "JACKSONVILLE JAGUARS",
+          "away": "DENVER BRONCOS"
+        },
+        {
+          "id": 9,
+          "home": "TENEESSE TITANS",
+          "away": "KANSAS CITY CHIEFS"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "BALTIMORE RAVENS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "CINCINATTI BENGALS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "DENVER BRONCOS"
+        },
+        {
+          "id": 8,
+          "home": "JACKSONVILLE JAGUARS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 9,
+          "home": "TENEESSE TITANS",
+          "away": "LAS VEGAS RAIDERS"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "HOUSTON TEXANS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "INDIANAPOLIS COLTS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 6,
+          "home": "BALTIMORE RAVENS",
+          "away": "DENVER BRONCOS"
+        },
+        {
+          "id": 7,
+          "home": "CINCINATTI BENGALS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 8,
+          "home": "CLEVELAND BROWNS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 9,
+          "home": "PITTSBURG STEELERS",
+          "away": "LOS ANGELES CHARGERS"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "INDIANAPOLIS COLTS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "HOUSTON TEXANS"
+        },
+        {
+          "id": 6,
+          "home": "BALTIMORE RAVENS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 7,
+          "home": "CINCINATTI BENGALS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 8,
+          "home": "CLEVELAND BROWNS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 9,
+          "home": "PITTSBURG STEELERS",
+          "away": "DENVER BRONCOS"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "HOUSTON TEXANS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "INDIANAPOLIS COLTS"
+        },
+        {
+          "id": 6,
+          "home": "BALTIMORE RAVENS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 7,
+          "home": "CINCINATTI BENGALS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 8,
+          "home": "CLEVELAND BROWNS",
+          "away": "DENVER BRONCOS"
+        },
+        {
+          "id": 9,
+          "home": "PITTSBURG STEELERS",
+          "away": "KANSAS CITY CHIEFS"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "HOUSTON TEXANS"
+        },
+        {
+          "id": 4,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "INDIANAPOLIS COLTS"
+        },
+        {
+          "id": 5,
+          "home": "NEW YORK JETS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 6,
+          "home": "BALTIMORE RAVENS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 7,
+          "home": "CINCINATTI BENGALS",
+          "away": "DENVER BRONCOS"
+        },
+        {
+          "id": 8,
+          "home": "CLEVELAND BROWNS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 9,
+          "home": "PITTSBURG STEELERS",
+          "away": "LAS VEGAS RAIDERS"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "MIAMI DOLPHINS"
+        },
+        {
+          "id": 3,
+          "home": "NEW ENGLAND PATRIOTS",
+          "away": "NEW YORK JETS"
+        },
+        {
+          "id": 4,
+          "home": "BALTIMORE RAVENS",
+          "away": "CINCINATTI BENGALS"
+        },
+        {
+          "id": 5,
+          "home": "CLEVELAND BROWNS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "INDIANAPOLIS COLTS"
+        },
+        {
+          "id": 7,
+          "home": "JACKSONVILLE JAGUARS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 8,
+          "home": "DENVER BRONCOS",
+          "away": "KANSAS CITY CHIEFS"
+        },
+        {
+          "id": 9,
+          "home": "LAS VEGAS RAIDERS",
+          "away": "LOS ANGELES CHARGERS"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "NEW ENGLAND PATRIOTS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "NEW YORK JETS"
+        },
+        {
+          "id": 4,
+          "home": "BALTIMORE RAVENS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 5,
+          "home": "CINCINATTI BENGALS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 8,
+          "home": "DENVER BRONCOS",
+          "away": "LAS VEGAS RAIDERS"
+        },
+        {
+          "id": 9,
+          "home": "KANSAS CITY CHIEFS",
+          "away": "LOS ANGELES CHARGERS"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "BUFFALO BILLS",
+          "away": "NEW YORK JETS"
+        },
+        {
+          "id": 3,
+          "home": "MIAMI DOLPHINS",
+          "away": "NEW ENGLAND PATRIOTS"
+        },
+        {
+          "id": 4,
+          "home": "BALTIMORE RAVENS",
+          "away": "PITTSBURG STEELERS"
+        },
+        {
+          "id": 5,
+          "home": "CINCINATTI BENGALS",
+          "away": "CLEVELAND BROWNS"
+        },
+        {
+          "id": 6,
+          "home": "HOUSTON TEXANS",
+          "away": "TENEESSE TITANS"
+        },
+        {
+          "id": 7,
+          "home": "INDIANAPOLIS COLTS",
+          "away": "JACKSONVILLE JAGUARS"
+        },
+        {
+          "id": 8,
+          "home": "DENVER BRONCOS",
+          "away": "LOS ANGELES CHARGERS"
+        },
+        {
+          "id": 9,
+          "home": "KANSAS CITY CHIEFS",
+          "away": "LAS VEGAS RAIDERS"
+        }
+      ]
+    }
+  ],
+  "NFC": [
+    {
+      "week": 1,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "NEW YORK GIANTS"
+        },
+        {
+          "id": 3,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "WASHINGTON COMMANDERS"
+        },
+        {
+          "id": 4,
+          "home": "CHICAGO BEARS",
+          "away": "DETROIT LIONS"
+        },
+        {
+          "id": 5,
+          "home": "GREEN BAY PACKERS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "CAROLINA PANTHERS"
+        },
+        {
+          "id": 7,
+          "home": "NEW ORLEANS SAINTS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 8,
+          "home": "ARIZONA CARDINALS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 9,
+          "home": "SAN FRANCISCO 49ERS",
+          "away": "SEATTLE SEAHAWKS"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "PHILADELPHIA EAGLES"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "WASHINGTON COMMANDERS"
+        },
+        {
+          "id": 4,
+          "home": "CHICAGO BEARS",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 5,
+          "home": "DETROIT LIONS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 8,
+          "home": "ARIZONA CARDINALS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 9,
+          "home": "LOS ANGELES RAMS",
+          "away": "SEATTLE SEAHAWKS"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "WASHINGTON COMMANDERS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "PHILADELPHIA EAGLES"
+        },
+        {
+          "id": 4,
+          "home": "CHICAGO BEARS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 5,
+          "home": "DETROIT LIONS",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 8,
+          "home": "ARIZONA CARDINALS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 9,
+          "home": "LOS ANGELES RAMS",
+          "away": "SAN FRANCISCO 49ERS"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "CHICAGO BEARS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "DETROIT LIONS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "ARIZONA CARDINALS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 8,
+          "home": "NEW ORLEANS SAINTS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 9,
+          "home": "TAMPA BAY BUCCANEERS",
+          "away": "SEATTLE SEAHAWKS"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "DETROIT LIONS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "CHICAGO BEARS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 8,
+          "home": "NEW ORLEANS SAINTS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 9,
+          "home": "TAMPA BAY BUCCANEERS",
+          "away": "ARIZONA CARDINALS"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "CHICAGO BEARS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "DETROIT LIONS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 8,
+          "home": "NEW ORLEANS SAINTS",
+          "away": "ARIZONA CARDINALS"
+        },
+        {
+          "id": 9,
+          "home": "TAMPA BAY BUCCANEERS",
+          "away": "LOS ANGELES RAMS"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "CHICAGO BEARS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "DETROIT LIONS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "ARIZONA CARDINALS"
+        },
+        {
+          "id": 8,
+          "home": "NEW ORLEANS SAINTS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 9,
+          "home": "TAMPA BAY BUCCANEERS",
+          "away": "SAN FRANCISCO 49ERS"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "ATLANTA FALCONS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "CAROLINA PANTHERS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 6,
+          "home": "CHICAGO BEARS",
+          "away": "ARIZONA CARDINALS"
+        },
+        {
+          "id": 7,
+          "home": "DETROIT LIONS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 8,
+          "home": "GREEN BAY PACKERS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 9,
+          "home": "MINNESOTA VIKINGS",
+          "away": "SEATTLE SEAHAWKS"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "CAROLINA PANTHERS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "ATLANTA FALCONS"
+        },
+        {
+          "id": 6,
+          "home": "CHICAGO BEARS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 7,
+          "home": "DETROIT LIONS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 8,
+          "home": "GREEN BAY PACKERS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 9,
+          "home": "MINNESOTA VIKINGS",
+          "away": "ARIZONA CARDINALS"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "ATLANTA FALCONS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "CAROLINA PANTHERS"
+        },
+        {
+          "id": 6,
+          "home": "CHICAGO BEARS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 7,
+          "home": "DETROIT LIONS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 8,
+          "home": "GREEN BAY PACKERS",
+          "away": "ARIZONA CARDINALS"
+        },
+        {
+          "id": 9,
+          "home": "MINNESOTA VIKINGS",
+          "away": "LOS ANGELES RAMS"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "ATLANTA FALCONS"
+        },
+        {
+          "id": 4,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "CAROLINA PANTHERS"
+        },
+        {
+          "id": 5,
+          "home": "WASHINGTON COMMANDERS",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 6,
+          "home": "CHICAGO BEARS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 7,
+          "home": "DETROIT LIONS",
+          "away": "ARIZONA CARDINALS"
+        },
+        {
+          "id": 8,
+          "home": "GREEN BAY PACKERS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 9,
+          "home": "MINNESOTA VIKINGS",
+          "away": "SAN FRANCISCO 49ERS"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "NEW YORK GIANTS"
+        },
+        {
+          "id": 3,
+          "home": "PHILADELPHIA EAGLES",
+          "away": "WASHINGTON COMMANDERS"
+        },
+        {
+          "id": 4,
+          "home": "CHICAGO BEARS",
+          "away": "DETROIT LIONS"
+        },
+        {
+          "id": 5,
+          "home": "GREEN BAY PACKERS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "CAROLINA PANTHERS"
+        },
+        {
+          "id": 7,
+          "home": "NEW ORLEANS SAINTS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 8,
+          "home": "ARIZONA CARDINALS",
+          "away": "LOS ANGELES RAMS"
+        },
+        {
+          "id": 9,
+          "home": "SAN FRANCISCO 49ERS",
+          "away": "SEATTLE SEAHAWKS"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "PHILADELPHIA EAGLES"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "WASHINGTON COMMANDERS"
+        },
+        {
+          "id": 4,
+          "home": "CHICAGO BEARS",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 5,
+          "home": "DETROIT LIONS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 8,
+          "home": "ARIZONA CARDINALS",
+          "away": "SAN FRANCISCO 49ERS"
+        },
+        {
+          "id": 9,
+          "home": "LOS ANGELES RAMS",
+          "away": "SEATTLE SEAHAWKS"
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "matchups": [
+        {
+          "id": 2,
+          "home": "DALLAS COWBOYS",
+          "away": "WASHINGTON COMMANDERS"
+        },
+        {
+          "id": 3,
+          "home": "NEW YORK GIANTS",
+          "away": "PHILADELPHIA EAGLES"
+        },
+        {
+          "id": 4,
+          "home": "CHICAGO BEARS",
+          "away": "MINNESOTA VIKINGS"
+        },
+        {
+          "id": 5,
+          "home": "DETROIT LIONS",
+          "away": "GREEN BAY PACKERS"
+        },
+        {
+          "id": 6,
+          "home": "ATLANTA FALCONS",
+          "away": "TAMPA BAY BUCCANEERS"
+        },
+        {
+          "id": 7,
+          "home": "CAROLINA PANTHERS",
+          "away": "NEW ORLEANS SAINTS"
+        },
+        {
+          "id": 8,
+          "home": "ARIZONA CARDINALS",
+          "away": "SEATTLE SEAHAWKS"
+        },
+        {
+          "id": 9,
+          "home": "LOS ANGELES RAMS",
+          "away": "SAN FRANCISCO 49ERS"
+        }
+      ]
+    }
+  ]
+}
