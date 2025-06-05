@@ -23,7 +23,7 @@ const ProfilePage = () => {
     setLoading(true);
     try {
       const [capRes, playerRes] = await Promise.all([
-        fetch(`${API_URL}profile/cap-summary/${teamName}`),
+        fetch(`${API_URL}/profile/cap-summary/${teamName}`),
         fetch(`${API_URL}/profile/players/${teamName}`)
       ]);
       const capJson = await capRes.json();
