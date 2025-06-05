@@ -196,7 +196,9 @@ const PlayersPage = () => {
                 <CardTitle>Jogadores ({conf})</CardTitle>
               </CardHeader>
               <CardContent className="p-4">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+                <div className="space-y-2 mb-4">
+                  <h2 className="text-sm font-semibold text-muted-foreground">Filtros</h2>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <Input
                     placeholder="Buscar por nome..."
                     value={searchTerm}
@@ -245,6 +247,7 @@ const PlayersPage = () => {
                       ))}
                     </SelectContent>
                   </Select>
+                  </div>
                 </div>
 
                 <div className="overflow-x-auto w-full">
