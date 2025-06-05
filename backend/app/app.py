@@ -64,7 +64,7 @@ def get_players():
             "salary": item["2025"],
             "deadCap2026": item[2026],
             "deadCap2027": item[2027],
-            "deadCap2027": item[2028],
+            "deadCap2028": item[2028],
         })
 
     return jsonify(pythonize(players))
