@@ -33,8 +33,7 @@ import {
   statsFieldsByPosition,
   seasons,
 } from "@/constants/constants";
-
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+import { API_URL } from "@/utils/apiUtils";
 const StatsPage = () => {
   const [season, setSeason] = useState("2025");
   const [statsData, setStatsData] = useState<Record<string, any[]>>({});

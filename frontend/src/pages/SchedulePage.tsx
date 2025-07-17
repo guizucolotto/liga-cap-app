@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
-  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select";
-
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+import { API_URL } from "@/utils/apiUtils";
 
 const SchedulePage = () => {
   const [scheduleData, setScheduleData] = useState<{ AFC: any[]; NFC: any[] }>({ AFC: [], NFC: [] });

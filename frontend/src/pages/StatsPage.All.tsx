@@ -9,10 +9,12 @@ import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
 import {
-  Card, CardHeader, CardTitle, CardContent,
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
 } from "@/components/ui/card";
-
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+import { API_URL } from "@/utils/apiUtils";
 
 const StatsAll = () => {
   const [allStats, setAllStats] = useState([]);
@@ -25,7 +27,7 @@ const StatsAll = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/stats");
+        const response = await axios.get(`${API_URL}/stats`);
         const data = response.data;
         const players = data.ALL || [];
         setAllStats(players);

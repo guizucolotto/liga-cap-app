@@ -45,7 +45,7 @@ const columns = [
   { key: "salary", label: "Salary" },
 ];
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+import { API_URL } from "@/utils/apiUtils";
 
 const formatMoney = (val: number) =>
   isNaN(val) || val === 0 ? "-" : `$${(val / 1_000_000).toFixed(1)}M`;

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'; // Use axios for API calls
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+import { API_URL } from "@/utils/apiUtils";
 const TEStats = () => {
   const [teStats, setTeStats] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -12,7 +11,7 @@ const TEStats = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:5000/api/import_weekly_data/${year}`); // Updated API endpoint
+        const response = await axios.get(`${API_URL}/api/import_weekly_data/${year}`);
         console.log('Fetched TE Stats:', response.data); // Log the fetched data
         setTeStats(response.data); // Adjust this line based on the actual data structure returned
       } catch (err) {

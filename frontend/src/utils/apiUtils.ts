@@ -1,6 +1,12 @@
 
 import { toast } from "sonner";
 
+// Base URL for the backend API. Removes any trailing slash to avoid
+// double slashes when concatenating paths.
+export const API_URL = (
+  import.meta.env.VITE_API_URL || "http://localhost:5000"
+).replace(/\/+$/, "");
+
 /**
  * Generic function to fetch data from an API
  */

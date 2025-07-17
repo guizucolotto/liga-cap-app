@@ -22,8 +22,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { positions, teams } from "@/constants/constants";
-
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+import { API_URL } from "@/utils/apiUtils";
 
 const StatsAll = () => {
   const [allStats, setAllStats] = useState<any[]>([]);
