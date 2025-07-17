@@ -3,10 +3,10 @@ import { useAuth } from "@/contexts/AuthContext";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { API_URL } from "@/utils/apiUtils";
 // import { teamLogos } from "@/constants/teamLogos";
 // import GenericLogo from "@/assets/logos/genericlogo.jpeg"; // Uma logo padrão
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const ProfilePage = () => {
   const { user } = useAuth();
