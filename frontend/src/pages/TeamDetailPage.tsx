@@ -17,7 +17,7 @@ import {
 } from "chart.js";
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
-import { API_URL } from "@/utils/apiUtils";
+import { fetchFromApi } from "@/utils/apiUtils";
 
 
 // Função para importar logo pelo teamId
@@ -40,12 +40,16 @@ const TeamDetailPage = () => {
     const fetchTeamData = async () => {
       setLoading(true);
       try {
-        const [teamsRes, playersRes] = await Promise.all([
-          fetch(`${API_URL}/teams`),
-          fetch(`${API_URL}/players`)
+        const [teams, players] = await Promise.all([
+          fetchFromApi<any[]>("/teams"),
+          fetchFromApi<any[]>("/players"),
         ]);
-        const teams = await teamsRes.json();
-        const players = await playersRes.json();
+        if (!teams || !players) {
+          setTeam(null);
+          setRoster([]);
+          setLoading(false);
+          return;
+        }
 
         // Função para normalizar slugs (caso-insensível, underscore)
         const norm = (str: string) =>
