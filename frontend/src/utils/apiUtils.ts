@@ -11,8 +11,11 @@ export const API_URL = (
  * Generic function to fetch data from an API
  */
 export async function fetchFromApi<T>(url: string, options: RequestInit = {}): Promise<T | null> {
+  const fullUrl = url.startsWith('http')
+    ? url
+    : `${API_URL}${url.startsWith('/') ? '' : '/'}${url}`;
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(fullUrl, options);
     
     if (!response.ok) {
       throw new Error(`API error: ${response.status}`);
