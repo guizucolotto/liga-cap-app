@@ -45,7 +45,7 @@ users_db = {
 # Colunas relevantes
 colunas_planilha = [
     'Player', 'Position', 'NFL Team', 'Fantasy Team',
-    'Conference','Contract Type', '2025', 2026, 2027, 2028
+    'Conference','Contract Type', '2025', '2026', '2027', '2028'
 ]
 
 try:
@@ -60,7 +60,7 @@ try:
 
 
     # Limpa valores numéricos
-    for col in ['2025', 2026, 2027, 2028]:
+    for col in ['2025', '2026', '2027', '2028']:
         clean_columns(df_players, col)
         # Monta o dicionário team_players
         
