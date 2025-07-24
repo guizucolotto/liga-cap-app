@@ -105,8 +105,8 @@ try:
     df["cap_space"] = df["2025"]
 
     df = df.rename(columns={
-        "Time": "name",
-        "Divisão": "division",
+        "Team": "name",
+        "Division": "division",
         "cap_used": "cap_used",
         "cap_space": "cap_space",
         "2026": "cap_y1",
