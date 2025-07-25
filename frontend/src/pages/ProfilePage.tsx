@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { API_URL } from "@/utils/apiUtils";
-// import { teamLogos } from "@/constants/teamLogos";
-// import GenericLogo from "@/assets/logos/genericlogo.jpeg"; // Uma logo padrão
+import { teamLogos } from "@/utils/teamLogos";
+import GenericLogo from "@/assets/logos/genericlogo.jpeg"; // Uma logo padrão
 
 
 const ProfilePage = () => {
@@ -72,9 +72,9 @@ const ProfilePage = () => {
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <img
-                    // src={teamLogos[team] || GenericLogo}
-                    // alt={team}
-                    // className="w-10 h-10 object-contain"
+                    src={teamLogos[team] || GenericLogo}
+                    alt={team}
+                    className="w-10 h-10 object-contain"
                   />
                   <CardTitle>
                     {conf.toUpperCase()}: {team}
@@ -105,7 +105,14 @@ const ProfilePage = () => {
           {/* Tabela de Resumo */}
           <Card>
             <CardHeader>
-              <CardTitle>Resumo de CAP - {teamName}</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <img
+                  src={teamLogos[teamName] || GenericLogo}
+                  alt={teamName}
+                  className="w-6 h-6 object-contain"
+                />
+                Resumo de CAP - {teamName}
+              </CardTitle>
             </CardHeader>
             <CardContent className="overflow-auto">
               <Table>
@@ -141,7 +148,14 @@ const ProfilePage = () => {
           {/* Tabela de Jogadores */}
           <Card>
             <CardHeader>
-              <CardTitle>Jogadores - {teamName}</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <img
+                  src={teamLogos[teamName] || GenericLogo}
+                  alt={teamName}
+                  className="w-6 h-6 object-contain"
+                />
+                Jogadores - {teamName}
+              </CardTitle>
             </CardHeader>
             <CardContent className="overflow-auto">
               <Table>
