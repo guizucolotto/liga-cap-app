@@ -1,0 +1,354 @@
+{
+    "kriguerlantunes@gmail.com": {
+        "password": "123456",
+        "alias": "Kriguer Antunes",
+        "teams": {
+            "nfc": {
+                "name": "NEW YORK GIANTS",
+                "acr": "NYG",
+                "nick": "Giants",
+                "conference": "NFC",
+                "division": "NFC EAST",
+                "id": "new_york_giants"
+            },
+            "afc": {
+                "name": "DENVER BRONCOS",
+                "acr": "DEN",
+                "nick": "Broncos",
+                "conference": "AFC",
+                "division": "AFC WEST",
+                "id": "denver_broncos"
+            }
+        }
+    },
+    "luanskmello@gmail.com": {
+        "password": "123456",
+        "alias": "Luan Mello",
+        "teams": {
+            "nfc": {
+                "name": "DALLAS COWBOYS",
+                "acr": "DAL",
+                "nick": "Cowboys",
+                "conference": "NFC",
+                "division": "NFC EAST",
+                "id": "dallas_cowboys"
+            },
+            "afc": {
+                "name": "KANSAS CITY CHIEFS",
+                "acr": "KC",
+                "nick": "Chiefs",
+                "conference": "AFC",
+                "division": "AFC WEST",
+                "id": "kansas_city_chiefs"
+            }
+        }
+    },
+    "guilherme.sori@gmail.com": {
+        "password": "123456",
+        "alias": "Guilherme Zuccolotto",
+        "teams": {
+            "nfc": {
+                "name": "PHILADELPHIA EAGLES",
+                "acr": "PHI",
+                "nick": "Eagles",
+                "conference": "NFC",
+                "division": "NFC EAST",
+                "id": "philadelphia_eagles"
+            },
+            "afc": {
+                "name": "NEW YORK JETS",
+                "acr": "NYJ",
+                "nick": "Jets",
+                "conference": "AFC",
+                "division": "AFC EAST",
+                "id": "new_york_jets"
+            }
+        }
+    },
+    "rafaelpasqua@gmail.com": {
+        "password": "123456",
+        "alias": "Rafael Della Pasqua",
+        "teams": {
+            "nfc": {
+                "name": "WASHINGTON COMMANDERS",
+                "acr": "WAS",
+                "nick": "Commanders",
+                "conference": "NFC",
+                "division": "NFC EAST",
+                "id": "washington_commanders"
+            },
+            "afc": {
+                "name": "INDIANAPOLIS COLTS",
+                "acr": "IND",
+                "nick": "Colts",
+                "conference": "AFC",
+                "division": "AFC SOUTH",
+                "id": "indianapolis_colts"
+            }
+        }
+    },
+    "alexhov@gmail.com": {
+        "password": "123456",
+        "alias": "Alex Facchini",
+        "teams": {
+            "nfc": {
+                "name": "DETROIT LIONS",
+                "acr": "DET",
+                "nick": "Lions",
+                "conference": "NFC",
+                "division": "NFC NORTH",
+                "id": "detroit_lions"
+            },
+            "afc": {
+                "name": "MIAMI DOLPHINS",
+                "acr": "MIA",
+                "nick": "Dolphins",
+                "conference": "AFC",
+                "division": "AFC EAST",
+                "id": "miami_dolphins"
+            }
+        }
+    },
+    "vic.wiss@gmail.com": {
+        "password": "123456",
+        "alias": "Victor Wiss",
+        "teams": {
+            "nfc": {
+                "name": "CHICAGO BEARS",
+                "acr": "CHI",
+                "nick": "Bears",
+                "conference": "NFC",
+                "division": "NFC NORTH",
+                "id": "chicago_bears"
+            },
+            "afc": {
+                "name": "NEW ENGLAND PATRIOTS",
+                "acr": "NE",
+                "nick": "Patriots",
+                "conference": "AFC",
+                "division": "AFC EAST",
+                "id": "new_england_patriots"
+            }
+        }
+    },
+    "rbmconstantino@gmail.com": {
+        "password": "123456",
+        "alias": "Renan Constantino",
+        "teams": {
+            "nfc": {
+                "name": "GREEN BAY PACKERS",
+                "acr": "GB",
+                "nick": "Packers",
+                "conference": "NFC",
+                "division": "NFC NORTH",
+                "id": "green_bay_packers"
+            },
+            "afc": {
+                "name": "PITTSBURGH STEELERS",
+                "acr": "PIT",
+                "nick": "Steelers",
+                "conference": "AFC",
+                "division": "AFC NORTH",
+                "id": "pittsburgh_steelers"
+            }
+        }
+    },
+    "pedrodonnan@gmail.com": {
+        "password": "123456",
+        "alias": "Pedro Camillo",
+        "teams": {
+            "nfc": {
+                "name": "MINNESOTA VIKINGS",
+                "acr": "MIN",
+                "nick": "Vikings",
+                "conference": "NFC",
+                "division": "NFC NORTH",
+                "id": "minnesota_vikings"
+            },
+            "afc": {
+                "name": "JACKSONVILLE JAGUARS",
+                "acr": "JAX",
+                "nick": "Jaguars",
+                "conference": "AFC",
+                "division": "AFC SOUTH",
+                "id": "jacksonville_jaguars"
+            }
+        }
+    },
+    "azevedo.sandro25@gmail.com": {
+        "password": "123456",
+        "alias": "Sandro Azevedo",
+        "teams": {
+            "nfc": {
+                "name": "ATLANTA FALCONS",
+                "acr": "ATL",
+                "nick": "Falcons",
+                "conference": "NFC",
+                "division": "NFC SOUTH",
+                "id": "atlanta_falcons"
+            },
+            "afc": {
+                "name": "HOUSTON TEXANS",
+                "acr": "HOU",
+                "nick": "Texans",
+                "conference": "AFC",
+                "division": "AFC SOUTH",
+                "id": "houston_texans"
+            }
+        }
+    },
+    "bp.mola@gmail.com": {
+        "password": "123456",
+        "alias": "Bruno Mola",
+        "teams": {
+            "nfc": {
+                "name": "NEW ORLEANS SAINTS",
+                "acr": "NO",
+                "nick": "Saints",
+                "conference": "NFC",
+                "division": "NFC SOUTH",
+                "id": "new_orleans_saints"
+            },
+            "afc": {
+                "name": "BUFFALO BILLS",
+                "acr": "BUF",
+                "nick": "Bills",
+                "conference": "AFC",
+                "division": "AFC EAST",
+                "id": "buffalo_bills"
+            }
+        }
+    },
+    "leonardo.nakama20@gmail.com": {
+        "password": "123456",
+        "alias": "Leonardo Nakama",
+        "teams": {
+            "nfc": {
+                "name": "TAMPA BAY BUCCANEERS",
+                "acr": "TB",
+                "nick": "Buccaneers",
+                "conference": "NFC",
+                "division": "NFC SOUTH",
+                "id": "tampa_bay_buccaneers"
+            },
+            "afc": {
+                "name": "LOS ANGELES CHARGERS",
+                "acr": "LAC",
+                "nick": "Chargers",
+                "conference": "AFC",
+                "division": "AFC WEST",
+                "id": "los_angeles_chargers"
+            }
+        }
+    },
+    "fernando.tashima@gmail.com": {
+        "password": "123456",
+        "alias": "Fernando Basilio",
+        "teams": {
+            "nfc": {
+                "name": "CAROLINA PANTHERS",
+                "acr": "CAR",
+                "nick": "Panthers",
+                "conference": "NFC",
+                "division": "NFC SOUTH",
+                "id": "carolina_panthers"
+            },
+            "afc": {
+                "name": "CINCINNATI BENGALS",
+                "acr": "CIN",
+                "nick": "Bengals",
+                "conference": "AFC",
+                "division": "AFC NORTH",
+                "id": "cincinnati_bengals"
+            }
+        }
+    },
+    "jhav_2@hotmail.com": {
+        "password": "123456",
+        "alias": "Jose Vasconcellos",
+        "teams": {
+            "nfc": {
+                "name": "ARIZONA CARDINALS",
+                "acr": "ARI",
+                "nick": "Cardinals",
+                "conference": "NFC",
+                "division": "NFC WEST",
+                "id": "arizona_cardinals"
+            },
+            "afc": {
+                "name": "BALTIMORE RAVENS",
+                "acr": "BAL",
+                "nick": "Ravens",
+                "conference": "AFC",
+                "division": "AFC NORTH",
+                "id": "baltimore_ravens"
+            }
+        }
+    },
+    "volnandy@hotmail.com": {
+        "password": "123456",
+        "alias": "Volnandy Brito",
+        "teams": {
+            "nfc": {
+                "name": "SAN FRANCISCO 49ERS",
+                "acr": "SF",
+                "nick": "49ers",
+                "conference": "NFC",
+                "division": "NFC WEST",
+                "id": "san_francisco_49ers"
+            },
+            "afc": {
+                "name": "CLEVELAND BROWNS",
+                "acr": "CLE",
+                "nick": "Browns",
+                "conference": "AFC",
+                "division": "AFC NORTH",
+                "id": "cleveland_browns"
+            }
+        }
+    },
+    "ericbueno87@gmail.com": {
+        "password": "123456",
+        "alias": "Eric Bueno",
+        "teams": {
+            "nfc": {
+                "name": "SEATTLE SEAHAWKS",
+                "acr": "SEA",
+                "nick": "Seahawks",
+                "conference": "NFC",
+                "division": "NFC WEST",
+                "id": "seattle_seahawks"
+            },
+            "afc": {
+                "name": "TENNESSEE TITANS",
+                "acr": "TEN",
+                "nick": "Titans",
+                "conference": "AFC",
+                "division": "AFC SOUTH",
+                "id": "tennessee_titans"
+            }
+        }
+    },
+    "fbtoliveira@gmail.com": {
+        "password": "123456",
+        "alias": "Felipe Oliveira",
+        "teams": {
+            "nfc": {
+                "name": "LOS ANGELES RAMS",
+                "acr": "LAR",
+                "nick": "Rams",
+                "conference": "NFC",
+                "division": "NFC WEST",
+                "id": "los_angeles_rams"
+            },
+            "afc": {
+                "name": "LAS VEGAS RAIDERS",
+                "acr": "LV",
+                "nick": "Raiders",
+                "conference": "AFC",
+                "division": "AFC WEST",
+                "id": "las_vegas_raiders"
+            }
+        }
+    }
+}
