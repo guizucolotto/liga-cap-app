@@ -21,7 +21,10 @@ interface UserTeam {
 const ProfilePage = () => {
   const { user } = useAuth();
   const [selectedTeamType, setSelectedTeamType] = useState<"AFC" | "NFC">("AFC");
-  const [capData, setCapData] = useState({});
+  const [capDataByConf, setCapDataByConf] = useState<{
+    afc?: any;
+    nfc?: any;
+  }>({});
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -37,22 +40,32 @@ const ProfilePage = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const [capRes, playerRes] = await Promise.all([
-        fetch(`${API_URL}/profile/cap-summary/${teamName}`),
-        fetch(`${API_URL}/profile/players/${teamName}`)
+      const confs: ("afc" | "nfc")[] = ["afc", "nfc"];
+      const capPromises = confs.map((conf) => {
+        const t = user?.teams?.[conf];
+        const name = typeof t === "string" ? t : (t as UserTeam)?.name;
+        return fetch(`${API_URL}/profile/cap-summary/${name}`).then((r) =>
+          r.json()
+        );
+      });
+      const playersPromise = fetch(`${API_URL}/profile/players/${teamName}`).then(
+        (r) => r.json()
+      );
+
+      const [capAfc, capNfc, playerJson] = await Promise.all([
+        capPromises[0],
+        capPromises[1],
+        playersPromise,
       ]);
-      const capJson = await capRes.json();
-      const playerJson = await playerRes.json();
-  
-      // 👇 Estes logs DEVEM aparecer no console ao recarregar a página
-      console.log("CAP DATA", capJson);
+
+      console.log("CAP DATA", { afc: capAfc, nfc: capNfc });
       console.log("PLAYERS", playerJson);
-  
-      setCapData(capJson);
+
+      setCapDataByConf({ afc: capAfc, nfc: capNfc });
       setPlayers(playerJson);
     } catch (error) {
       console.error("Erro ao carregar dados do perfil:", error);
-      setCapData({});
+      setCapDataByConf({});
       setPlayers([]);
     } finally {
       setLoading(false);
@@ -99,8 +112,9 @@ const ProfilePage = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                CAP 2025: {capData && capData["2025"] &&
-                  formatMoney(capData["2025"].salary)}
+                CAP 2025: {capDataByConf[conf as "afc" | "nfc"]?.["2025"]
+                  ? formatMoney(capDataByConf[conf as "afc" | "nfc"]["2025"].salary)
+                  : "-"}
               </CardContent>
             </Card>
           );
@@ -145,7 +159,12 @@ const ProfilePage = () => {
                 </TableHeader>
                 <TableBody>
                   {years.map((year) => {
-                    const cap = capData?.[year.toString()] || capData?.[year];
+                    const currentCap =
+                      capDataByConf[
+                        selectedTeamType.toLowerCase() as "afc" | "nfc"
+                      ];
+                    const cap =
+                      currentCap?.[year.toString()] || currentCap?.[year];
                     if (!cap) return null;
                     const remaining = cap.league - cap.salary - cap.dead;
                     return (
