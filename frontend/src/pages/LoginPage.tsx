@@ -25,7 +25,7 @@ const LoginPage = () => {
       });
       if (!res.ok) throw new Error("Login failed");
       const data = await res.json();
-      login(data.user.username, data.user.teams);
+      login(data.user.username, data.user.alias, data.user.teams);
       navigate("/profile");
     } catch {
       setError("Login inválido. Confira usuário e senha.");

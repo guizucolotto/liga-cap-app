@@ -35,6 +35,7 @@ def login():
     return jsonify({
         "user": {
             "username": username,
+            "alias": user.get("alias", username),
             "teams": user["teams"]
         },
         "token": "fake-jwt-token"
