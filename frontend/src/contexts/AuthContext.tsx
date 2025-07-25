@@ -18,8 +18,8 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const login = (username, teams) => {
-    const userData = { username, teams };
+  const login = (username, alias, teams) => {
+    const userData = { username, alias, teams };
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));
   };
