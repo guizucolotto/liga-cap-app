@@ -6,6 +6,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { API_URL } from "@/utils/apiUtils";
 import { teamLogos } from "@/utils/teamLogos";
 import GenericLogo from "@/assets/logos/genericlogo.jpeg"; // Uma logo padrão
+import SalaryOverview from "@/components/SalaryOverview";
 
 
 const ProfilePage = () => {
@@ -190,11 +191,13 @@ const ProfilePage = () => {
                   ))}
                 </TableBody>
               </Table>
-            </CardContent>
-          </Card>
-        </>
-      )}
-    </div>
+          </CardContent>
+        </Card>
+
+        <SalaryOverview players={players} />
+      </>
+    )}
+  </div>
   );
 };
 
