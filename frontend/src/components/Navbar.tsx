@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
-import { teamLogos } from "@/utils/teamLogos";
 import GenericLogo from "@/assets/logos/genericlogo.jpeg";
+import { getTeamLogo } from "@/utils/getTeamLogo";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -53,7 +53,7 @@ const Navbar = () => {
                 </span>
                 <div className="flex items-center space-x-2">
                   <img
-                    src={teamLogos[(user.teams.afc as any).nick || (user.teams.afc as any).split?.(" ").pop() || user.teams.afc]}
+                    src={getTeamLogo((user.teams.afc as any).id || (user.teams.afc as any).nick || user.teams.afc)}
                     alt="AFC Team"
                     className="h-6 w-6"
                   />
@@ -63,7 +63,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <img
-                    src={teamLogos[(user.teams.nfc as any).nick || (user.teams.nfc as any).split?.(" ").pop() || user.teams.nfc]}
+                    src={getTeamLogo((user.teams.nfc as any).id || (user.teams.nfc as any).nick || user.teams.nfc)}
                     alt="NFC Team"
                     className="h-6 w-6"
                   />
@@ -127,7 +127,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center space-x-2 mt-2">
                   <img
-                    src={teamLogos[(user.teams.afc as any).nick || (user.teams.afc as any).split?.(" ").pop() || user.teams.afc]}
+                    src={getTeamLogo((user.teams.afc as any).id || (user.teams.afc as any).nick || user.teams.afc)}
                     alt="AFC Team"
                     className="h-6 w-6"
                   />
@@ -137,7 +137,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center space-x-2 mt-2">
                   <img
-                    src={teamLogos[(user.teams.nfc as any).nick || (user.teams.nfc as any).split?.(" ").pop() || user.teams.nfc]}
+                    src={getTeamLogo((user.teams.nfc as any).id || (user.teams.nfc as any).nick || user.teams.nfc)}
                     alt="NFC Team"
                     className="h-6 w-6"
                   />
