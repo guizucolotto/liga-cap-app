@@ -33,11 +33,23 @@ def carregar_sheet(sheet_id: str, aba: str) -> pd.DataFrame:
 
 # -------------------- Usuários --------------------
 users_db = {
-    "guilherme": {
+    "guilherme.sori@gmail.com": {
         "password": "123456",
         "teams": {
-            "afc": "NEW YORK JETS",
-            "nfc": "PHILADELPHIA EAGLES"
+            "nfc": {
+                "name": "PHILADELPHIA EAGLES",
+                "acr": "PHI",
+                "nick": "Eagles",
+                "conference": "NFC",
+                "division": "NFC EAST"
+            },
+            "afc": {
+                "name": "NEW YORK JETS",
+                "acr": "NYJ",
+                "nick": "Jets",
+                "conference": "AFC",
+                "division": "AFC EAST"
+            }
         }
     }
 }
