@@ -102,7 +102,7 @@ const Dashboard = () => {
             <CardTitle>Top Teams by Salary Cap Used</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {["AFC", "NFC"].map((conf) => {
                 const topTeams = [...teamsData]
                   .filter(
