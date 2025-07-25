@@ -35,6 +35,7 @@ def carregar_sheet(sheet_id: str, aba: str) -> pd.DataFrame:
 users_db = {
     "guilherme.sori@gmail.com": {
         "password": "123456",
+        "alias": "Guilherme",
         "teams": {
             "nfc": {
                 "name": "PHILADELPHIA EAGLES",
