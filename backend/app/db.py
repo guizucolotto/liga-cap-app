@@ -41,14 +41,16 @@ users_db = {
                 "acr": "PHI",
                 "nick": "Eagles",
                 "conference": "NFC",
-                "division": "NFC EAST"
+                "division": "NFC EAST",
+                "id": "philadelphia_eagles"
             },
             "afc": {
                 "name": "NEW YORK JETS",
                 "acr": "NYJ",
                 "nick": "Jets",
                 "conference": "AFC",
-                "division": "AFC EAST"
+                "division": "AFC EAST",
+                "id": "new_york_jets"
             }
         }
     }
