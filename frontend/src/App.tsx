@@ -13,7 +13,6 @@ const TeamDetailPage = lazy(() => import("./pages/TeamDetailPage"));
 const PlayersPage = lazy(() => import("./pages/PlayersPage"));
 const SchedulePage = lazy(() => import("./pages/SchedulePage"));
 const StatsPage = lazy(() => import("./pages/StatsPage"));
-const RegisterPage = lazy(() => import("./pages/RegisterPage"));
 const LoginPage = lazy(() => import("./pages/LoginPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const ProfilePage = lazy(() => import("./pages/ProfilePage")); // ✅ Se já existir
@@ -30,7 +29,6 @@ const App = () => (
           <Suspense fallback={<div>Loading page…</div>}>
             <Routes>
               <Route element={<MainLayout />}>
-                <Route path="/register" element={<RegisterPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/profile" element={<ProfilePage />} /> {/* ✅ Adicione esta rota */}
                 <Route path="/" element={<Index />} />
