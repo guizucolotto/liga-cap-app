@@ -1,6 +1,8 @@
 # db.py
 import pandas as pd
 from collections import defaultdict
+import json
+import os
 
 # -------------------- Variaveis --------------------
 
@@ -32,30 +34,13 @@ def carregar_sheet(sheet_id: str, aba: str) -> pd.DataFrame:
     return df
 
 # -------------------- Usuários --------------------
-users_db = {
-    "guilherme.sori@gmail.com": {
-        "password": "123456",
-        "alias": "Guilherme",
-        "teams": {
-            "nfc": {
-                "name": "PHILADELPHIA EAGLES",
-                "acr": "PHI",
-                "nick": "Eagles",
-                "conference": "NFC",
-                "division": "NFC EAST",
-                "id": "philadelphia_eagles"
-            },
-            "afc": {
-                "name": "NEW YORK JETS",
-                "acr": "NYJ",
-                "nick": "Jets",
-                "conference": "AFC",
-                "division": "AFC EAST",
-                "id": "new_york_jets"
-            }
-        }
-    }
-}
+USERS_DB_FILE = os.path.join(os.path.dirname(__file__), "data", "users_db.json")
+try:
+    with open(USERS_DB_FILE, "r", encoding="utf-8") as f:
+        users_db = json.load(f)
+except Exception as e:
+    print("❌ Erro ao carregar users_db:", e)
+    users_db = {}
 # -------------------- Jogadores por time --------------------
 # Colunas relevantes
 colunas_planilha = [
