@@ -42,14 +42,9 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6">
           {navLinks}
           {!user ? (
-            <>
-              <Link to="/login" className="hover:text-nfl-red px-3 py-2">
-                Login
-              </Link>
-              <Link to="/register" className="hover:text-nfl-red px-3 py-2">
-                Register
-              </Link>
-            </>
+            <Link to="/login" className="hover:text-nfl-red px-3 py-2">
+              Login
+            </Link>
           ) : (
             <>
               <div className="flex items-center space-x-4">
@@ -104,14 +99,13 @@ const Navbar = () => {
           <div className="flex flex-col space-y-2 px-4 pb-4">
             {navLinks}
             {!user ? (
-              <>
-                <Link to="/login" className="hover:text-nfl-red px-3 py-2" onClick={() => setMenuOpen(false)}>
-                  Login
-                </Link>
-                <Link to="/register" className="hover:text-nfl-red px-3 py-2" onClick={() => setMenuOpen(false)}>
-                  Register
-                </Link>
-              </>
+              <Link
+                to="/login"
+                className="hover:text-nfl-red px-3 py-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                Login
+              </Link>
             ) : (
               <>
                 <div className="flex items-center space-x-2 mt-2">

@@ -159,10 +159,7 @@ const Sidebar = () => {
         {expanded && (
           <div className="mt-6 border-t border-gray-600 pt-4 space-y-2">
             {!user && (
-              <>
-                <Link to="/login" className="block text-sm hover:underline px-3">Login</Link>
-                <Link to="/register" className="block text-sm hover:underline px-3">Register</Link>
-              </>
+              <Link to="/login" className="block text-sm hover:underline px-3">Login</Link>
             )}
             {user && (
               <>
