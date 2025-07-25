@@ -52,12 +52,24 @@ const Navbar = () => {
                   👋 Olá, <strong>{user.username}</strong>
                 </span>
                 <div className="flex items-center space-x-2">
-                  <img src={teamLogos[user.teams.afc]} alt="AFC Team" className="h-6 w-6" />
-                  <span className="text-sm">{user.teams.afc}</span>
+                  <img
+                    src={teamLogos[(user.teams.afc as any).nick || (user.teams.afc as any).split?.(" ").pop() || user.teams.afc]}
+                    alt="AFC Team"
+                    className="h-6 w-6"
+                  />
+                  <span className="text-sm">
+                    {(user.teams.afc as any).name || user.teams.afc}
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <img src={teamLogos[user.teams.nfc]} alt="NFC Team" className="h-6 w-6" />
-                  <span className="text-sm">{user.teams.nfc}</span>
+                  <img
+                    src={teamLogos[(user.teams.nfc as any).nick || (user.teams.nfc as any).split?.(" ").pop() || user.teams.nfc]}
+                    alt="NFC Team"
+                    className="h-6 w-6"
+                  />
+                  <span className="text-sm">
+                    {(user.teams.nfc as any).name || user.teams.nfc}
+                  </span>
                 </div>
               </div>
               <Link to="/profile" className="hover:text-nfl-red px-3 py-2">
@@ -114,12 +126,24 @@ const Navbar = () => {
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 mt-2">
-                  <img src={teamLogos[user.teams.afc]} alt="AFC Team" className="h-6 w-6" />
-                  <span className="text-sm">{user.teams.afc}</span>
+                  <img
+                    src={teamLogos[(user.teams.afc as any).nick || (user.teams.afc as any).split?.(" ").pop() || user.teams.afc]}
+                    alt="AFC Team"
+                    className="h-6 w-6"
+                  />
+                  <span className="text-sm">
+                    {(user.teams.afc as any).name || user.teams.afc}
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2 mt-2">
-                  <img src={teamLogos[user.teams.nfc]} alt="NFC Team" className="h-6 w-6" />
-                  <span className="text-sm">{user.teams.nfc}</span>
+                  <img
+                    src={teamLogos[(user.teams.nfc as any).nick || (user.teams.nfc as any).split?.(" ").pop() || user.teams.nfc]}
+                    alt="NFC Team"
+                    className="h-6 w-6"
+                  />
+                  <span className="text-sm">
+                    {(user.teams.nfc as any).name || user.teams.nfc}
+                  </span>
                 </div>
                 <Link to="/profile" className="hover:text-nfl-red px-3 py-2 mt-2" onClick={() => setMenuOpen(false)}>
                   Profile
