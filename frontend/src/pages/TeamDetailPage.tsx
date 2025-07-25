@@ -18,17 +18,7 @@ import {
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
 import { fetchFromApi } from "@/utils/apiUtils";
-
-
-// Função para importar logo pelo teamId
-const getTeamLogo = (teamId: string) => {
-  try {
-    return new URL(`/src/assets/logos/${teamId}.png`, import.meta.url).href;
-  } catch {
-    /* @vite-ignore */
-    return new URL(`/src/assets/logos/genericlogo.png`, import.meta.url).href;
-  }
-};
+import { getTeamLogo } from "@/utils/getTeamLogo";
 
 const TeamDetailPage = () => {
   const { teamId } = useParams();

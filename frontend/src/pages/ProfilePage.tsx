@@ -4,8 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { API_URL } from "@/utils/apiUtils";
-import { teamLogos } from "@/utils/teamLogos";
-import GenericLogo from "@/assets/logos/genericlogo.jpeg"; // Uma logo padrão
+import { getTeamLogo } from "@/utils/getTeamLogo";
 import SalaryOverview from "@/components/SalaryOverview";
 
 interface UserTeam {
@@ -102,7 +101,7 @@ const ProfilePage = () => {
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <img
-                    src={teamLogos[logoKey] || GenericLogo}
+                    src={getTeamLogo(team.id || logoKey)}
                     alt={team.name}
                     className="w-10 h-10 object-contain"
                   />
@@ -139,7 +138,7 @@ const ProfilePage = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <img
-                  src={teamLogos[selectedTeam?.nick || teamName.split(" ").pop() || ""] || GenericLogo}
+                  src={getTeamLogo(selectedTeam?.id || selectedTeam?.nick || teamName)}
                   alt={teamName}
                   className="w-6 h-6 object-contain"
                 />
@@ -187,7 +186,7 @@ const ProfilePage = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <img
-                  src={teamLogos[selectedTeam?.nick || teamName.split(" ").pop() || ""] || GenericLogo}
+                  src={getTeamLogo(selectedTeam?.id || selectedTeam?.nick || teamName)}
                   alt={teamName}
                   className="w-6 h-6 object-contain"
                 />
