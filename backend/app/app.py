@@ -62,9 +62,9 @@ def get_players():
             "conference": item["Conference"],
             "contractType": item["Contract Type"],
             "salary": item["2025"],
-            "deadCap2026": item[2026],
-            "deadCap2027": item[2027],
-            "deadCap2028": item[2028],
+            "deadCap2026": item["2026"],
+            "deadCap2027": item["2027"],
+            "deadCap2028": item["2028"],
         })
 
     return jsonify(pythonize(players))
