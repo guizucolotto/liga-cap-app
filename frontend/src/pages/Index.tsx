@@ -96,48 +96,62 @@ const Dashboard = () => {
       </div>
       
       <div className="grid gap-4 md:grid-cols-2">
-        {/* Top Teams by Salary Cap Used */}
+        {/* Top Teams by Salary Cap Used split by conference */}
         <Card className="col-span-1">
           <CardHeader>
             <CardTitle>Top Teams by Salary Cap Used</CardTitle>
           </CardHeader>
           <CardContent>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Rank</TableHead>
-                  <TableHead>Team</TableHead>
-                  <TableHead>Conference</TableHead>
-                  <TableHead>Division</TableHead>
-                  <TableHead className="text-right">Salary Cap Used</TableHead>
-                  <TableHead className="text-right">Cap Space</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {[...teamsData]
-                  .filter(team => team.capUsed !== undefined)
-                  .sort((a, b) => b.capUsed - a.capUsed) // Maior para menor
-                  .slice(0, 5)
-                  .map((team, idx) => (
-                    <TableRow key={team.id}>
-                      <TableCell>{idx + 1}</TableCell>
-                      <TableCell>
-                        <Link to={`/teams/${team.id}`} className="font-medium hover:underline">
-                          {team.name}
-                        </Link>
-                      </TableCell>
-                      <TableCell>{team.conference}</TableCell>
-                      <TableCell>{team.division}</TableCell>
-                      <TableCell className="text-right">
-                        {formatMillions(team.capUsed)}
-                      </TableCell>
-                      <TableCell className="text-right">
-                        {formatMillions(team.capSpace)}
-                      </TableCell>
-                    </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {["AFC", "NFC"].map((conf) => {
+                const topTeams = [...teamsData]
+                  .filter(
+                    (team) =>
+                      team.conference?.trim().toUpperCase() === conf &&
+                      team.capUsed !== undefined
+                  )
+                  .sort((a, b) => b.capUsed - a.capUsed)
+                  .slice(0, 5);
+                return (
+                  <div key={conf}>
+                    <h4 className="font-semibold mb-2">{conf}</h4>
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead>Rank</TableHead>
+                          <TableHead>Team</TableHead>
+                          <TableHead>Division</TableHead>
+                          <TableHead className="text-right">Salary Cap Used</TableHead>
+                          <TableHead className="text-right">Cap Space</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {topTeams.map((team, idx) => (
+                          <TableRow key={team.id}>
+                            <TableCell>{idx + 1}</TableCell>
+                            <TableCell>
+                              <Link
+                                to={`/teams/${team.id}`}
+                                className="font-medium hover:underline"
+                              >
+                                {team.name}
+                              </Link>
+                            </TableCell>
+                            <TableCell>{team.division}</TableCell>
+                            <TableCell className="text-right">
+                              {formatMillions(team.capUsed)}
+                            </TableCell>
+                            <TableCell className="text-right">
+                              {formatMillions(team.capSpace)}
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
+                );
+              })}
+            </div>
             <div className="mt-4 text-center">
               <Link to="/teams" className="text-blue-600 hover:underline text-sm">
                 View all teams
