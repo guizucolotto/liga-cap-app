@@ -8,6 +8,15 @@ import { teamLogos } from "@/utils/teamLogos";
 import GenericLogo from "@/assets/logos/genericlogo.jpeg"; // Uma logo padrão
 import SalaryOverview from "@/components/SalaryOverview";
 
+interface UserTeam {
+  name: string;
+  acr: string;
+  nick: string;
+  conference: string;
+  division: string;
+  id: string;
+}
+
 
 const ProfilePage = () => {
   const { user } = useAuth();
@@ -18,7 +27,9 @@ const ProfilePage = () => {
 
   // Adapte os anos conforme o seu capData e playerData
   const years = [2025, 2026, 2027, 2028, 2029, 2030];
-  const teamName = user?.teams?.[selectedTeamType.toLowerCase()] || "";
+  const selectedTeam: UserTeam | undefined =
+    user?.teams?.[selectedTeamType.toLowerCase() as "afc" | "nfc"];
+  const teamName = selectedTeam?.name || "";
 
   const fetchData = async () => {
     setLoading(true);
@@ -66,24 +77,25 @@ const ProfilePage = () => {
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">Olá, {user.username}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {["afc", "nfc"].map(conf => {
-          const team = user.teams[conf];
+        {["afc", "nfc"].map((conf) => {
+          const t: UserTeam | undefined = user.teams[conf];
           return (
             <Card key={conf}>
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <img
-                    src={teamLogos[team] || GenericLogo}
-                    alt={team}
+                    src={teamLogos[t?.nick] || GenericLogo}
+                    alt={t?.name}
                     className="w-10 h-10 object-contain"
                   />
                   <CardTitle>
-                    {conf.toUpperCase()}: {team}
+                    {conf.toUpperCase()}: {t?.name}
                   </CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                CAP 2025: {capData && capData["2025"] && formatMoney(capData["2025"].salary)}
+                CAP 2025: {capData && capData["2025"] &&
+                  formatMoney(capData["2025"].salary)}
               </CardContent>
             </Card>
           );
@@ -108,7 +120,7 @@ const ProfilePage = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <img
-                  src={teamLogos[teamName] || GenericLogo}
+                  src={teamLogos[selectedTeam?.nick] || GenericLogo}
                   alt={teamName}
                   className="w-6 h-6 object-contain"
                 />
@@ -151,7 +163,7 @@ const ProfilePage = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <img
-                  src={teamLogos[teamName] || GenericLogo}
+                  src={teamLogos[selectedTeam?.nick] || GenericLogo}
                   alt={teamName}
                   className="w-6 h-6 object-contain"
                 />
