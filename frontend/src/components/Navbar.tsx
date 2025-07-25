@@ -49,7 +49,7 @@ const Navbar = () => {
             <>
               <div className="flex items-center space-x-4">
                 <span className="text-sm">
-                  👋 Olá, <strong>{user.username}</strong>
+                  👋 Olá, <strong>{user.alias || user.username}</strong>
                 </span>
                 <div className="flex items-center space-x-2">
                   <img
@@ -122,7 +122,7 @@ const Navbar = () => {
               <>
                 <div className="flex items-center space-x-2 mt-2">
                   <span className="text-sm">
-                    👋 Olá, <strong>{user.username}</strong>
+                    👋 Olá, <strong>{user.alias || user.username}</strong>
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 mt-2">
