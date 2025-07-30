@@ -16,6 +16,10 @@ const Dashboard = () => {
   const [schedule, setSchedule] = useState<{ AFC: any[]; NFC: any[] }>({ AFC: [], NFC: [] });
   const [loading, setLoading] = useState(true);
   const [selectedWeek, setSelectedWeek] = useState(1);
+  const totalPlayers = teamsData.reduce(
+    (acc, team) => acc + (team.totalPlayers ?? 0),
+    0
+  );
 
   useEffect(() => {
     const fetchData = async () => {
@@ -88,9 +92,9 @@ const Dashboard = () => {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {teamsData.length > 0 ? teamsData.length * 53 : "--"}
+              {teamsData.length > 0 ? totalPlayers : "--"}
             </div>
-            <p className="text-xs text-muted-foreground">53-man rosters</p>
+            <p className="text-xs text-muted-foreground">Players across all teams</p>
           </CardContent>
         </Card>
       </div>
