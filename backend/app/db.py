@@ -66,7 +66,8 @@ try:
         
     df_players["id"] = df_players["Player"].str.lower().str.replace(" ", "_", regex=False)
         
-
+    total_players = df_players.groupby('Fantasy Team')['Player'].count().reset_index()
+    total_players.columns = ['Fantasy Team', 'players']
         
     team_players = df_players.fillna(0).to_dict(orient="records")
 
@@ -116,7 +117,7 @@ try:
 
     df["conference"] = df["division"].str.strip().str[:3]
     df["id"] = df["name"].str.lower().str.replace(" ", "_", regex=False)
-    df["players"] = 53
+    df["players"] = total_players['players']
 
     team_data = df.to_dict(orient="records")
 
