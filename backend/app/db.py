@@ -87,7 +87,7 @@ try:
     # Corrigir colunas de valores monetários
 
     # Seleciona colunas e corrige nomes
-    df = df.iloc[:, :12]
+    df = df.iloc[:, :13]
     df.columns = df.iloc[1]
     df = df.iloc[2:].reset_index(drop=True)
     df = df[["Team", "Division", "2025", "2026", "2027", "2028"]]
